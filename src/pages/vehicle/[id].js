@@ -26,10 +26,7 @@ export default function Page() {
     }
   }, [id, vehicles]);
 
-  if (!vehicle) {
-    return <div>Loading...</div>;
-  }
-
+ 
   return (
     <Box
       sx={{
