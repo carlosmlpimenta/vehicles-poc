@@ -4,6 +4,7 @@ import {
   Card,
   CardHeader,
   CardMedia,
+  CircularProgress,
   Typography,
 } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
@@ -26,7 +27,8 @@ export default function Page() {
     }
   }, [id, vehicles]);
 
- 
+  if (!vehicle) return <CircularProgress />;
+
   return (
     <Box
       sx={{

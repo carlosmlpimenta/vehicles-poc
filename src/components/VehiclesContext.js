@@ -50,7 +50,7 @@ const VehiclesProvider = ({ children }) => {
         setMaxBid,
         toggleFavourite,
         rowsPerPage,
-        page,
+        page
       }}
     >
       {children}
